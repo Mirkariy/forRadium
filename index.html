@@ -12,6 +12,15 @@
          element.style.opacity = transparency;
       }
     </script>
+    <script>
+      document.onkeydown = function rem(b) {
+        if (b.keyCode == '32') {
+          const del = Document.querySelectorAll(".quest");
+          del.remove();
+          console.log('Вы восхитительны');
+        }
+      };
+    </script>
     <div class="quest" onclick="magic(this, 0)" onkeydown="console.log('Success onkeydown');" > Константин - Начинающий web-программист / Junior Frontend Developer </div>
   </body>
 </html>
