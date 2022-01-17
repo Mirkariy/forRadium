@@ -15,7 +15,7 @@
     <script>
       document.onkeydown = function rem(b) {
         if (b.keyCode == '32') {
-          const del = Document.querySelectorAll(".quest");
+          let del = document.querySelectorAll(".quest");
           del.remove();
           console.log('Вы восхитительны');
         }
