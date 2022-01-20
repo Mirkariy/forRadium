@@ -16,7 +16,9 @@
     <script>
       document.onkeydown = function rem(b) {
         if (b.keyCode == '32') {
-          document.getElementsByClassName("quest").remove();
+          document.getElementsByClassName("quest").forEach((element) => {
+             element.remove();
+          });
           console.log('Вы восхитительны');
         }
       };
